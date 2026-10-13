@@ -1,0 +1,56 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B1120; /* Dark background similar to image */
+            color: #F3F4F6;
+            -webkit-tap-highlight-color: transparent;
+        }
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #374151;
+            border-radius: 10px;
+        }
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .active-tab {
+            background-color: #4F46E5; /* Indigo */
+            color: white;
+        }
+        .active-tab::after {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 4px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 4px auto 0 auto;
+        }
+        .progress-bar-bg {
+            background-color: #1F2937;
+        }
+        .progress-bar-fill {
+            background: linear-gradient(90deg, #4F46E5, #8B5CF6);
+            transition: width 1s linear;
+        }
+        .active-class-border {
+            border-left: 4px solid #10B981; /* Emerald green for active class in list */
+            background-color: rgba(16, 185, 129, 0.05);
+        }
+        
+        /* Modal transitions */
+        .modal {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
